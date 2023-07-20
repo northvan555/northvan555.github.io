@@ -1,7 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MailerSend Assignment</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" href="favicon.png">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<!-- Header Nav -->
+	<header>
+		<div>
+			<a class="logo" href="/">
+				<svg width="171" height="30" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><tite>MailerSend Logo</tite><path d="M29.6 10.2a.6.6 0 0 0-.5-.3H18L23.5 1V.3A.6.6 0 0 0 23 0h-9.6c-1 0-1.9.5-2.4 1.4L0 18.8c-.1.2-.1.5 0 .8l.5.2h11.2l-5.6 8.9v.5c0 .3.3.5.5.5h9.6c1 0 1.9-.5 2.4-1.4l5.4-8.5 5.5-8.8c.1-.3.2-.6 0-.8" fill="#4E48E0"/><path d="m24 19.8-5.3 8.5c-.5 1-1.4 1.4-2.4 1.4H6.7a.6.6 0 0 1-.6-.5l.1-.5 5.6-8.9H24Z" fill="#4E48E0"/><path d="M18 10h11c.3 0 .5 0 .6.2.2.2.1.5 0 .8l-5.5 8.8H11.7L18 10Z" fill="#1C81C1"/><path d="M.6 19.8c-.2 0-.4 0-.5-.2a.7.7 0 0 1 0-.8L11 1.4C11.5.5 12.4 0 13.4 0H23c.2 0 .4 0 .5.3V1L11.8 19.8H.6Z" fill="#5CC4CD"/><g fill="#3A3945"><path d="M95.7 16.4h6.8v-.2c-.2-.6-.4-1.1-.8-1.6-.9-1-2.5-1.4-3.9-.8-1.2.4-1.8 1.4-2.1 2.6m4.8 2.3H96c-.2 0-.2 0-.2.2a3.5 3.5 0 0 0 3.1 2.7c1.7.2 3.3-.3 4.7-1.1l.3-.2 1.2 2.2-.2.1a9.5 9.5 0 0 1-6 1.6c-1 0-1.9-.2-2.8-.7a5.7 5.7 0 0 1-2.8-2.9A7.3 7.3 0 0 1 93 15c.9-2.4 3-4 5.8-4 1.4 0 2.7.2 3.9 1 1.7 1 2.5 2.6 2.7 4.6v2.1h-5M131 16.4h6.8v-.2c-.2-.6-.4-1.1-.8-1.6-1-1-2.5-1.4-3.9-.8-1.2.4-1.8 1.4-2.1 2.6m4.8 2.3h-4.6c-.2 0-.2 0-.2.2a3.5 3.5 0 0 0 3.1 2.7c1.7.2 3.2-.3 4.7-1.1l.3-.2 1.2 2.2-.2.1a9.5 9.5 0 0 1-6 1.6c-1 0-2-.2-2.8-.7a5.7 5.7 0 0 1-2.8-2.9 7.3 7.3 0 0 1-.2-5.6c1-2.4 3.2-4 5.9-4 1.4 0 2.7.2 3.9 1 1.6 1 2.4 2.6 2.6 4.6v2.1h-4.9M121.9 11a5.5 5.5 0 0 1 4 1.8l-1.5 2-.2-.2a4 4 0 0 0-2.6-1.1 2 2 0 0 0-1 .1c-.7.4-.8 1.3-.2 1.9l.8.4c1 .4 2 .7 2.8 1.2.7.3 1.3.7 1.7 1.4.8 1.2.7 3-.2 4-.9 1-2 1.6-3.2 1.7a6.4 6.4 0 0 1-5.9-2.3l-.1-.1 1.7-1.9.1.2c.7.8 1.6 1.4 2.7 1.6.6 0 1.2 0 1.8-.3.5-.3.8-.8.6-1.3-.1-.3-.3-.5-.6-.7l-1-.5-2.4-1c-1-.5-1.7-1.2-2-2.3-.5-1.8.5-3.5 2.2-4.2.8-.3 1.5-.4 2.5-.4M71.2 21.3a3.7 3.7 0 1 1 0-7.3 3.7 3.7 0 0 1 0 7.3Zm4-10.3-.3 1.5c-1-1-2.4-1.5-3.7-1.5a6.6 6.6 0 0 0 0 13.3c1.3 0 2.7-.6 3.7-1.6l.3 1.6h2.6V11h-2.6ZM164 21.3a3.7 3.7 0 1 1 0-7.3 3.7 3.7 0 0 1 0 7.3Zm3.7-14.8v6c-1-.9-2.3-1.5-3.7-1.5a6.6 6.6 0 0 0 0 13.3c1.4 0 2.7-.7 3.7-1.6l.3 1.6h2.7V6.5h-3ZM81 24.3h3V11.6h-3zM149.3 11c-1.1 0-2.4.7-3 1.5l-.5-1.5h-2.5v13.3h3v-7.5a3 3 0 0 1 3-2.8 3 3 0 0 1 3 2.8v7.5h3v-7.5a6 6 0 0 0-6-5.8M87.1 24.3h3V6.5h-3zM84.5 8.1a2 2 0 1 0-3.9 0 2 2 0 0 0 4 0M113.5 11c-1 0-2 .6-2.7 1.2l-.3-1.2h-2.7v13.2h3v-6.4c0-1.4 1.3-3.6 3-3.8.3 0 .7 0 1.3.2l.8-3c-.6 0-1.4-.3-2.4-.2M56.4 11c-1.7 0-3.2.7-4.3 2a5.8 5.8 0 0 0-10.2 3.8v7.5h3v-7.5a2.8 2.8 0 0 1 5.7 0v7.5h3v-7.5a2.8 2.8 0 0 1 5.7 0v7.5h3v-7.5c0-3.2-2.7-5.8-5.9-5.8"/></g></g></svg>
+			</a>
+		</div>
+		<nav>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</nav>
+		<div>
+			<div>
+				<label></label>
+				<input>
+			</div>
+			<div></div>
+		</div>
+	</header>
+	<!-- Hero -->
+	<section>
+		<div>
+			<div>
+				<div>
+					<h1></h1>
+					<p></p>
+				</div>
+				<img src="" alt="">
+			</div>
+		</div>
+	</section>
+	<!-- Hightlight -->
+	<section>
+		<div>
+			<h2></h2>
+			<div>
+				<div>
+					<img src="" alt="">
+					<div>
+						<h3></h3>
+						<h4></h4>
+						<h4></h4>
+						<button>Add to Cart</button>
+					</div>
+				</div>
+				<div>
+					<img src="" alt="">
+					<div>
+						<h3></h3>
+						<h4></h4>
+						<h4></h4>
+						<button>Add to Cart</button>
+					</div>
+				</div>
+				<div>
+					<img src="" alt="">
+					<div>
+						<h3></h3>
+						<h4></h4>
+						<h4></h4>
+						<button>Add to Cart</button>
+					</div>
+				</div>
+				<div>
+					<img src="" alt="">
+					<div>
+						<h3></h3>
+						<h4></h4>
+						<h4></h4>
+						<button>Add to Cart</button>
+					</div>
+				</div>
+				<div>
+					<img src="" alt="">
+					<div>
+						<h3></h3>
+						<h4></h4>
+						<h4></h4>
+						<button>Add to Cart</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero Short -->
+	<section>
+		<div>
+			<div>
+				<img src="" alt="">
+			</div>
+			<div>
+				<h2></h2>
+				<p></p>
+				<button></button>
+			</div>
+		</div>
+	</section>
+	<footer></footer>
+  <h1>Hello, world!</h1>
 </body>
 </html>
