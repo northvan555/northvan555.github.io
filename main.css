@@ -1,6 +1,23 @@
 @import url("https://northvan555.github.io./normalize.css");
 /* Global */
 	/* Typography */
+	h1, h2, h3, h4, p {
+		font-family: 'Inter', sans-serif;
+	}
+
+
+	h1 {
+		font-size: 58px;
+		line-height: 72px;
+
+	}
+
+	h2 {
+		font-size: 32px;
+		line-height: 40px;
+
+	}
+
 	/* Spacing & container */
 	.section {
 		padding: 0 80px;
@@ -13,18 +30,20 @@
 	}
 
 	.container {
+		width: 100%;
 		max-width: 1920px;
 		margin: 0 auto;
 		padding: 24px 0;
+		box-sizing: border-box;
+	}
 
-		*>:first-child {
-			margin-top: 0;
-		}
+	.container>:first-child {
+		margin-top: 0;
+	}
 
-		*>:last-child {
+	.container>:last-child {
 			margin-bottom: 0;
 		}
-	}
 
 	@media only screen and (min-width: 768px) {
 		.container {
@@ -36,6 +55,23 @@
 /* Header */
 
 /* Hero */
+.hero {
+	background: #fff;
+	position: relative;
+	color: #000;
+}
+
+.hero--large {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+.hero__container {
+	width: fit-content;
+	max-width: 606px;
+
+}
 
 /* Higlight */
 
